@@ -1,0 +1,250 @@
+@import "_var";
+@import "_mixing";
+
+.parent-container
+{
+    background-image: url(../images/cafe.jpg);
+    height: 825px;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+padding-top: 110px;
+}
+.child1
+{
+    @include centre-align();
+    margin: 0px 100px;
+    
+}
+.child2
+{
+    @include centre-align();
+}
+.child3
+{
+    
+    @include centre-align();
+    display: flex;
+    background-color: white;
+    color: black;
+    p{
+        font-family: $font-family-sans-serif;
+        color: grey;
+        font-size: medium;
+    }
+}
+.main-container
+{
+height: 800px;
+text-align: center;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.btn1
+{
+display: block;
+margin: 0px auto;
+padding: 10px 20px;
+color: white;
+background-color: $btn-color;
+border-radius: 30px;
+&:hover{
+    background-color:#c41043;
+    
+    color: white;
+    outline-offset: 5px;
+    
+}
+}
+.my-nav-bar
+{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.card-container
+{    margin: 0px 220px;
+    text-align: center;
+    
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    bottom: 60px;
+}
+.img-icon
+{
+    width: 50px;
+}
+h1
+{
+    font-family: $font-family-sans-serif;
+    text-align: center;
+}
+.temp-container1
+{
+    padding:50px 100px;
+}
+.image-holder
+{
+    width: 50%;
+    display: inline-block;
+
+    box-sizing: content-box;
+}
+.temp-container1,.temp-container2
+{
+    display: flex;
+    .heading3{
+        color: $btn-color;
+    }
+}
+.content-holder
+{
+    text-align: left;
+    margin:50px;
+    padding:50px;
+    display: inline-block;
+    width: 45%;
+    
+}
+.team-member
+{
+    
+    margin:40px;
+}
+.team-member-header
+{@include centre-align();
+    margin-top:50px;
+    padding:20px;
+}
+.team-member-content
+{
+    @include centre-align();
+    width: 80%;
+    
+}
+
+.content2
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    min-height: 70vh;
+    min-width: 100vw;
+    background-image: url(../images/cafe2.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    color: white;
+    
+}
+h5
+{
+    text-align: center;
+    font-size: medium;
+    
+}
+.content3-header{
+        @include centre-align();
+        margin: 50px;
+        
+    }
+
+.content3-content{
+        @include centre-align();
+        width:80%;
+        
+    }
+    .content3-card
+    {
+        vertical-align: top;
+    }
+.content4
+{
+    @include centre-align()
+}
+footer
+{
+    margin: 100px;
+    display: flex;
+justify-content: space-around;
+}
+.team-member-card
+{
+    vertical-align: top;
+}
+.footer-form
+{
+    width: 100%;
+    border: 0px solid blue;
+    border-bottom: 1px solid black;
+}
+.footer1
+{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .footer-image{
+        @include centre-align();
+    }
+    h5{
+        text-align: center;
+        
+    }
+    p{
+        line-height: 10px;
+        text-align: center;
+        font-size: small;
+    }
+}
+.reasons-to-visit{
+    height: 600px;
+    background-image: url(../images/reasons-to-visit.jpg);
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: grey;
+    background-blend-mode: multiply;
+    padding: 100px;
+    justify-content: center;
+    
+    .dataw
+    {
+        display: inline-block;
+    color: white;    
+         width: 40%;
+        .data1,.data2,.data3,.data4
+        { display: inline-block;
+            width: 200px;
+            a{
+                color:$btn-color;
+            }
+            
+        }
+    }
+    .info{
+        padding: 10px 20px 10px 100px;
+        display: inline-block;
+        width: 50%;
+        color: white;
+        vertical-align: top;
+    }
+}
+img:hover{
+    border: 2px solid brown;
+}
+.social-icons
+{
+    color:$btn-color;
+    font-size: xx-large;
+    margin-top: 10px;
+    &:hover
+    {
+        color:#c41043
+    }
+}
